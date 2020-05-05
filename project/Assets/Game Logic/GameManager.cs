@@ -8,7 +8,7 @@ class GameManager : MonoBehaviour
 {
     // The board is made up of three concentric rings.
     // The outer and middle rings have 12 spaces, and the middle ring has one space.
-    public Monster[] Board { get; }
+    public Monster[] Board { get; private set; }
 
     public GameManager()
     {
@@ -18,6 +18,18 @@ class GameManager : MonoBehaviour
     public void Start()
     {
         SetupMonsters();
+    }
+
+    // TODO: make sure this works
+    public string GetBoardJson()
+    {
+        return JsonUtility.ToJson(Board);
+    }
+    
+    // TODO: make sure this works
+    public void UpdateBoardFromJson(string json)
+    {
+        Board = JsonUtility.FromJson<Monster[]>(json);
     }
 
     public void AttackMonster(int src, int dest)
