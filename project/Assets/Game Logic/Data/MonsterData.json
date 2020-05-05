@@ -1,0 +1,61 @@
+{
+    "Monsters":
+    [
+        {
+            "Name": "Ghhhk",
+            "Health": 4,
+            "Attack": 2,
+            "Range": 1,
+            "Movement": 2
+        },
+        {
+            "Name": "Grimtaash",
+            "Health": 4,
+            "Attack": 2,
+            "Range": 3,
+            "Movement": 1
+        },
+        {
+            "Name": "Houjix",
+            "Health": 8,
+            "Attack": 4,
+            "Range": 1,
+            "Movement": 4
+        },
+        {
+            "Name": "K'lor'slug",
+            "Health": 4,
+            "Attack": 3,
+            "Range": 5,
+            "Movement": 2
+        },
+        {
+            "Name": "Kintan Strider",
+            "Health": 8,
+            "Attack": 4,
+            "Range": 1,
+            "Movement": 2
+        },
+        {
+            "Name": "Mantellian Savrip",
+            "Health": 9,
+            "Attack": 8,
+            "Range": 1,
+            "Movement": 1
+        },
+        {
+            "Name": "Monnok",
+            "Health": 6,
+            "Attack": 6,
+            "Range": 2,
+            "Movement": 1
+        },
+        {
+            "Name": "Ng'ok",
+            "Health": 6,
+            "Attack": 4,
+            "Range": 1,
+            "Movement": 2
+        }
+    ]
+}
