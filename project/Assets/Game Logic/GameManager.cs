@@ -20,6 +20,25 @@ class GameManager : MonoBehaviour
         SetupMonsters();
     }
 
+    // Returns the winning player id if there is a winner, otherwise returns -1.
+    public int CheckForWinner()
+    {
+        var ids = new List<int>();
+
+        // I think this works? Might throw an error for null spaces idk
+        foreach (var monster in Board)
+        {
+            if (monster != null)
+            {
+                ids.Add(monster.OwnerId);
+            }
+        }
+
+        ids = ids.Distinct().ToList();
+        
+        return (ids.Count == 1) ? ids[0] : -1;
+    }
+
     // TODO: make sure this works
     public string GetBoardJson()
     {
