@@ -767,7 +767,7 @@ Transform:
   m_GameObject: {fileID: 2834706671650795829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 2834706671504330802}
   - {fileID: 2834706670512007880}
@@ -811,6 +811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baaabfa5d639d4f2c8b10f0eea5d6fde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameLogicManager: {fileID: 0}
   monster1: {fileID: 7825157232491723014, guid: 955be3a57ec034d219796d5465d3a8fb,
     type: 3}
   monster2: {fileID: 343394659848659442, guid: cfff1679dfb604a779003de3daf97a92, type: 3}
