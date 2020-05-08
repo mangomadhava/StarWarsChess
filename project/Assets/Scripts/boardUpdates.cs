@@ -19,6 +19,13 @@ public class boardUpdates : MonoBehaviour
     {
         //will hold the gameobject positions 
         Transform[] monsterPrefabs = GetComponentsInChildren<Transform>();
+        NetworkManagerScript.OnBoardUpdate += updateBoard;
+        
+    }
+
+    void updateBoard(){
+       Monster[] board =  NetworkManagerScript.getBoardState();
+       //Update the board
     }
 
     // Update is called once per frame

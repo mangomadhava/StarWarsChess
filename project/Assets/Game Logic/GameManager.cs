@@ -4,7 +4,7 @@ using UnityEngine;
 using System.IO;
 
 // Rules: https://starwars.fandom.com/wiki/Dejarik
-class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     // The board is made up of three concentric rings.
     // The outer and middle rings have 12 spaces, and the middle ring has one space.
@@ -43,6 +43,10 @@ class GameManager : MonoBehaviour
     public string GetBoardJson()
     {
         return JsonUtility.ToJson(Board);
+    }
+
+    public Monster[] GetBoardFromJson(string board){
+        return JsonUtility.FromJson<Monster[]>(board);
     }
     
     // TODO: make sure this works
